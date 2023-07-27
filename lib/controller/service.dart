@@ -57,7 +57,6 @@ class Service extends Product {
   Future<List<Product>> getFavorite() async {
     SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
 
-    // sharedPreferences.clear();
     //recupero os favoritos que estão no Shared Preferences.
     String recover = sharedPreferences.getString('listFavorite').toString();
 
@@ -109,10 +108,5 @@ class Service extends Product {
     print('QTD de Produtos Favoritos após a ADIÇÃO: ${newListFavorite.length}');
 
     return result;
-    // String recover2 = sharedPreferences.getString('listFavorite').toString();
-
-    // List listFavorite2 = json.decode(recover2) ?? [];
-
-    // print(listFavorite2.length);
   }
 }

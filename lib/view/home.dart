@@ -2,7 +2,6 @@ import 'package:desafio/controller/service.dart';
 import 'package:desafio/model/product.dart';
 import 'package:desafio/view/product_favorite.dart';
 import 'package:flutter/material.dart';
-
 import '../controller/sechBox.dart';
 import 'product_list.dart';
 

@@ -35,7 +35,6 @@ bool checkFavorite(Product product) {
 class _ProductListState extends State<ProductList> {
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     getFavorite();
   }
@@ -59,7 +58,7 @@ class _ProductListState extends State<ProductList> {
               return Column(
                 children: <Widget>[
                   Container(
-                    margin: EdgeInsets.only(left: 20),
+                    margin: const EdgeInsets.only(left: 20),
                     height: 200,
                     child: Row(children: <Widget>[
                       GestureDetector(
@@ -117,7 +116,7 @@ class _ProductListState extends State<ProductList> {
                                                   ProductDetails(product)));
                                     },
                                     child: Container(
-                                      margin: EdgeInsets.only(left: 5),
+                                      margin: const EdgeInsets.only(left: 5),
                                       child: const Icon(
                                         Icons.star,
                                         size: 30,
@@ -145,9 +144,9 @@ class _ProductListState extends State<ProductList> {
                                     ),
                                   ),
                                   Align(
-                                    alignment: Alignment(1.0, 0.0),
+                                    alignment: const Alignment(1.0, 0.0),
                                     child: Container(
-                                        margin: EdgeInsets.only(top: 2),
+                                        margin: const EdgeInsets.only(top: 2),
                                         child: GestureDetector(
                                           onTap: () {
                                             Service().checkFavorite(
@@ -174,9 +173,9 @@ class _ProductListState extends State<ProductList> {
                             Stack(
                               children: [
                                 Align(
-                                  alignment: Alignment(-0.65, 0.0),
+                                  alignment: const Alignment(-0.65, 0.0),
                                   child: Container(
-                                    margin: EdgeInsets.only(top: 20),
+                                    margin: const EdgeInsets.only(top: 20),
                                     child: Text(
                                       '\$ $price',
                                       textAlign: TextAlign.start,
@@ -225,7 +224,7 @@ class _ProductListState extends State<ProductList> {
                         Align(
                           alignment: Alignment.bottomCenter,
                           child: TextButton(
-                            child: Text(
+                            child: const Text(
                               "Go Home",
                               style: TextStyle(fontSize: 19),
                             ),

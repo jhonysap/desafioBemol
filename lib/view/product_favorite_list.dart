@@ -32,7 +32,7 @@ class _FavoritesListState extends State<FavoritesList> {
               return Column(
                 children: <Widget>[
                   Container(
-                    margin: EdgeInsets.only(left: 20),
+                    margin: const EdgeInsets.only(left: 20),
                     height: 200,
                     child: Row(children: <Widget>[
                       SizedBox(
@@ -63,7 +63,7 @@ class _FavoritesListState extends State<FavoritesList> {
                                     const EdgeInsets.only(left: 20, top: 10),
                                 child: Stack(children: <Widget>[
                                   Container(
-                                    margin: EdgeInsets.only(left: 5),
+                                    margin: const EdgeInsets.only(left: 5),
                                     child: const Icon(
                                       Icons.star,
                                       size: 30,
@@ -85,9 +85,9 @@ class _FavoritesListState extends State<FavoritesList> {
                             Stack(
                               children: [
                                 Align(
-                                  alignment: Alignment(-0.65, 0.0),
+                                  alignment: const Alignment(-0.65, 0.0),
                                   child: Container(
-                                    margin: EdgeInsets.only(top: 20),
+                                    margin: const EdgeInsets.only(top: 20),
                                     child: Text(
                                       '\$ $price',
                                       textAlign: TextAlign.start,
@@ -136,7 +136,7 @@ class _FavoritesListState extends State<FavoritesList> {
                         Align(
                           alignment: Alignment.bottomCenter,
                           child: TextButton(
-                            child: Text(
+                            child: const Text(
                               "Go Home",
                               style: TextStyle(fontSize: 19),
                             ),
@@ -144,7 +144,7 @@ class _FavoritesListState extends State<FavoritesList> {
                               Navigator.pushReplacement(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => Home()));
+                                      builder: (context) => const Home()));
                             },
                           ),
                         )

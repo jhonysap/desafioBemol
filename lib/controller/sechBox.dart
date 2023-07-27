@@ -26,7 +26,7 @@ class _SearchBoxState extends State<SearchBox> {
         margin: const EdgeInsets.only(top: 7),
         child: TextField(
           onChanged: widget.onChange,
-          style: TextStyle(color: Colors.black, fontSize: 20),
+          style: const TextStyle(color: Colors.black, fontSize: 20),
           decoration: InputDecoration(
               enabledBorder: InputBorder.none,
               focusedBorder: InputBorder.none,

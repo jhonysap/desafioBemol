@@ -3,7 +3,6 @@ import 'package:desafio/view/product_favorite_list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
-
 import '../controller/service.dart';
 
 class FavoriteProduct extends StatefulWidget {

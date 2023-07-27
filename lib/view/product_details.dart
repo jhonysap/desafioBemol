@@ -38,7 +38,6 @@ void formatterValue() {
 class _ProductDetailsState extends State<ProductDetails> {
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     product = widget.product;
     formatterValue();
@@ -132,7 +131,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                   ],
                 ),
                 Container(
-                  margin: EdgeInsets.only(top: 15),
+                  margin: const EdgeInsets.only(top: 15),
                   child: Stack(
                     children: <Widget>[
                       const Align(
@@ -157,7 +156,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.only(top: 15),
+                  margin: const EdgeInsets.only(top: 15),
                   child: Stack(
                     children: <Widget>[
                       const Align(
@@ -168,14 +167,14 @@ class _ProductDetailsState extends State<ProductDetails> {
                         ),
                       ),
                       Align(
-                        alignment: Alignment(0.6, 0.0),
+                        alignment: const Alignment(0.6, 0.0),
                         child: Container(
                           width: MediaQuery.of(context).size.width / 1.2,
                           margin: const EdgeInsets.only(left: 10),
                           child: Text(
                             '${product.description}',
-                            style:
-                                TextStyle(color: Colors.black87, fontSize: 18),
+                            style: const TextStyle(
+                                color: Colors.black87, fontSize: 18),
                           ),
                         ),
                       ),
